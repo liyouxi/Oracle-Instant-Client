@@ -51,29 +51,34 @@
 
 ### 5.进入 /usr/lib/oracle/12.1/client/bin目录下 运行sqlplus。
 
+
+
 ## CentOS下安装 
 
-1. 安装libaio和oracle client 
+### 1. 安装libaio和oracle client 
 
-yum install libaio
-rpm -Uvh oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm
-rpm -Uvh oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm
-rpm -Uvh oracle-instantclient12.1-sqlplus-12.1.0.2.0-1.x86_64.rpm
+`yum install libaio`
 
-2. 添加  Oracle client 到  library path
+`rpm -Uvh oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm`
 
+`rpm -Uvh oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm`
 
-echo "/usr/lib/oracle/12.1/client64/lib" >/etc/ld.so.conf.d/oracle.conf
-ldconfig
+`rpm -Uvh oracle-instantclient12.1-sqlplus-12.1.0.2.0-1.x86_64.rpm`
 
-3. install epel repo via yum extra
+### 2. 添加  Oracle client 到  library path
 
+`echo "/usr/lib/oracle/12.1/client64/lib" >/etc/ld.so.conf.d/oracle.conf`
 
-yum install epel-release
+`ldconfig`
 
-4. Install additional
+### 3. 安装 epel
 
-yum install gcc python-pip.noarch python-devel
-5. Install  cx_Oracle via pip
+`yum install epel-release`
 
-pip install cx_Oracle
+### 4. 安装额外依赖   
+
+`yum install gcc python-pip.noarch python-devel`
+
+### 5. 安装 cx_Oracle
+
+`pip install cx_Oracle`

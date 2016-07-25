@@ -7,37 +7,36 @@
 
 `https://github.com/liyouxi/Oracle-Instant-Client.git`
 
-`oracle-instantclient11.1-basic-11.1.0.7.0-1.i386.rpm`
+`oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm`
 
-`oracle-instantclient11.1-devel-11.1.0.7.0-1.i386.rpm`
+`oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm`
 
-`oracle-instantclient11.1-sqlplus-11.1.0.7.0-1.i386.rpm`
+`oracle-instantclient12.1-sqlplus-12.1.0.2.0-1.x86_64.rpm`
 
 ### 2. 将rpm文件转换成deb
-`alien -k Oracle-instantclient11.1-basic-11.1.0.7.0-1.i386.rpm`
+`alien -k oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm`
 
-`alien -k Oracle-instantclient11.1-devel-11.1.0.7.0-1.i386.rpm`
+`alien -k oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm`
 
-`alien -k Oracle-instantclient11.1-sqlplus-11.1.0.7.0-1.i386.rpm`
+`alien -k oracle-instantclient12.1-sqlplus-12.1.0.2.0-1.x86_64.rpm`
 
 ### 3. Install deb package 或者双击安装也可
-`dpkg -i oracle-instantclient11.1-basic_11.1.0.7.0-1_i386.deb`
+`dpkg -i oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.deb`
 
-`dpkg -i oracle-instantclient11.1-devel_11.1.0.7.0-1_i386.deb`
+`dpkg -i oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.deb`
 
-`dpkg -i oracle-instantclient11.1-sqlplus_11.1.0.7.0-1_i386.deb`
+`dpkg -i oracle-instantclient12.1-sqlplus-12.1.0.2.0-1.x86_64.deb`
 
 ### 4.配置环境变量，需要在root权限下
 
 `vim /etc/profile`
 
-注意：如果要提示删除交换文件，就删除吧，要不然运行sqlplus会出现一堆鸟问题，反正我是遇到了啊。
 
 在文件最下面添加：
 
-  `export ORACLE_HOME=/usr/lib/oracle/11.2/client`
+  `export ORACLE_HOME=/usr/lib/oracle/12.1/client`
   
-  `export ORACLE_BASE=/usr/lib/oracle/11.2`
+  `export ORACLE_BASE=/usr/lib/oracle/12.1`
   
   `export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH`
   
@@ -49,4 +48,4 @@
 
   `reboot`
 
-### 5.进入 /usr/lib/oracle/11.2/client/bin目录下 运行sqlplus。
+### 5.进入 /usr/lib/oracle/12.1/client/bin目录下 运行sqlplus。

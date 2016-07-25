@@ -1,19 +1,21 @@
 # Oracle-Instant-Client
 要先安装alien工具，必须是在root下安装
 
-apt-get install alien
+'apt-get install alien'
 
 ### 1. 下载数据包文件 ###
 
-https://github.com/liyouxi/Oracle-Instant-Client.git
+'https://github.com/liyouxi/Oracle-Instant-Client.git'
 
-oracle-instantclient11.1-basic-11.1.0.7.0-1.i386.rpm
-oracle-instantclient11.1-devel-11.1.0.7.0-1.i386.rpm
-oracle-instantclient11.1-sqlplus-11.1.0.7.0-1.i386.rpm
+'oracle-instantclient11.1-basic-11.1.0.7.0-1.i386.rpm'
+
+'oracle-instantclient11.1-devel-11.1.0.7.0-1.i386.rpm'
+
+'oracle-instantclient11.1-sqlplus-11.1.0.7.0-1.i386.rpm'
 
 ### 2. 将rpm文件转换成deb
-#### alien -k Oracle-instantclient11.1-basic-11.1.0.7.0-1.i386.rpm
-#### alien -k Oracle-instantclient11.1-devel-11.1.0.7.0-1.i386.rpm
+'alien -k Oracle-instantclient11.1-basic-11.1.0.7.0-1.i386.rpm'
+'alien -k Oracle-instantclient11.1-devel-11.1.0.7.0-1.i386.rpm'
 #### alien -k Oracle-instantclient11.1-sqlplus-11.1.0.7.0-1.i386.rpm
 
 ### 3. Install deb package 或者双击安装也可

@@ -13,7 +13,7 @@
 
 `oracle-instantclient12.1-sqlplus-12.1.0.2.0-1.x86_64.rpm`
 
-### 2. 将rpm文件转换成deb
+### 2. 在sudo权限下将rpm文件转换成deb
 `alien -k oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm`
 
 `alien -k oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm`
@@ -21,11 +21,11 @@
 `alien -k oracle-instantclient12.1-sqlplus-12.1.0.2.0-1.x86_64.rpm`
 
 ### 3. Install deb package 或者双击安装也可
-`dpkg -i oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.deb`
+`dpkg -i oracle-instantclient12.1_basic-12.1.0.2.0-1.x86_64.deb`
 
-`dpkg -i oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.deb`
+`dpkg -i oracle-instantclient12.1_devel-12.1.0.2.0-1.x86_64.deb`
 
-`dpkg -i oracle-instantclient12.1-sqlplus-12.1.0.2.0-1.x86_64.deb`
+`dpkg -i oracle-instantclient12.1_sqlplus-12.1.0.2.0-1.x86_64.deb`
 
 ### 4.配置环境变量，需要在root权限下
 

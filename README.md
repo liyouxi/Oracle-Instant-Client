@@ -36,9 +36,13 @@
 在文件最下面添加：
 
   `export ORACLE_HOME=/usr/lib/oracle/11.2/client`
+  
   `export ORACLE_BASE=/usr/lib/oracle/11.2`
+  
   `export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH`
+  
   `export NLS_LANG=AMERICAN_AMERICA.AL32UTF8`
+  
 保存
 
   `source /etc/profile，启动配置`
